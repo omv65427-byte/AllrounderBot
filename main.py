@@ -36,7 +36,7 @@ HELP_TEXT = """🤖 *Available Commands*
 /currency <amt> <from> <to> - Convert currency
 /shorten <url> - Shorten a URL
 /dictionary <word> - Word meaning
-/translate <lang_code> <text> - Translate text
+/translate <lang-code> <text> - Translate text
 /tts <text> - Text to voice message
 
 ⏰ *Productivity*
