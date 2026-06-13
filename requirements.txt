@@ -1,0 +1,10 @@
+python-telegram-bot[job-queue]==21.6
+requests==2.32.3
+qrcode[pil]==7.4.2
+Pillow==10.4.0
+gTTS==2.5.3
+PyMuPDF==1.24.10
+img2pdf==0.5.1
+py7zr==0.21.1
+deep-translator==1.11.4
+python-dotenv==1.0.1
