@@ -28,8 +28,8 @@ async def music_search(update: Update, context: ContextTypes.DEFAULT_TYPE):
         title = track.get("title")
         artist = track.get("artist", {}).get("name")
         link = track.get("link")
-        text = f"🎵 *{title}*\n👤 {artist}\n🔗 {link}"
-        await update.message.reply_text(text, parse_mode="Markdown")
+        text = f"🎵 {title}\n👤 {artist}\n🔗 {link}"
+        await update.message.reply_text(text)
 
 
 def register(app):
