@@ -77,13 +77,13 @@ async def dictionary_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     data = r.json()[0]
     meanings = data.get("meanings", [])
-    text = f"📖 *{word}*\n"
+    text = f"📖 {word}\n"
     for m in meanings[:3]:
         pos = m.get("partOfSpeech", "")
         defs = m.get("definitions", [])
         if defs:
-            text += f"\n_{pos}_: {defs[0].get('definition')}"
-    await update.message.reply_text(text, parse_mode="Markdown")
+            text += f"\n({pos}): {defs[0].get('definition')}"
+    await update.message.reply_text(text)
 
 
 # ---------- /translate ----------
